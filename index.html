@@ -1,12 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Barbería Python</h1>
-</body>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--****** enlace - css ******-->
+        <link rel="stylesheet" href="estilos/style.css">
+        
+<!--****** bootstrap ******-->
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script></script>
+<title>BarberiaCero</title>
+
+    </head>
+
+    <body>
+<!--******* header ******-->
+        <header class="header" >
+            <h1 class="header__h1" >
+                titulo
+            </h1>
+            <img src="" alt="" class="header__img" >imangen
+        </header>
+<!--****** menu - nav ******-->
+        <nav class="nav" >
+            <ul>
+                <li><a href="#">enlace</a></li>
+                <li><a href="#">enlace</a></li>
+                <li><a href="#">enlace</a></li>
+                <li><a href="#">enlace</a></li>
+            </ul>
+        </nav>
+
+        <main class="main" >
+            <section class="main__section" >
+<!--*******  trajetas  *******-->
+                <article class="main__section-article--flex" >
+                    <h2 class="article__h2 flex-item">servicios</h2>
+                    <div class="article__div flex-item">
+                        <h3 class="article__div-h3">corte</h3>
+                        <p class="article__div-p">
+                            Realizamos distintos tipos de corte de cabello tanto con tijeras, navaja 
+                            y máquina. 
+                        </p>
+                        <p class="article__div-p">
+                            Nuestro equipo está capacitado con las últimas técnicas y tendencias 
+                            para asesorar a cada cliente a conseguir su estilo único.
+                        </p>
+                    </div>
+                    <div class="article__div">
+                        <h3 class="article__div-h3">lavado</h3>
+                        <p class="article__div-p">
+                            Corte de cabello con lavado incluído y terminaciones a navaja.
+                        </p>
+                    </div>
+                    <div class="article__div">
+                        <h3 class="article__div-h3">tintura</h3>
+                        <p class="article__div-p">
+                            dolor sit amet consectetur adipisicing elit. Praesentium, velit!
+                        </p>
+                    </div>
+                    <div class="article__div">
+                        <h3 class="article__div-h3">afeitado</h3>
+                        <p class="article__div-p">
+                            Arreglo de barba con fomento caliente y frío. Terminaciones a navaja y productos para el cuidado de tu piel y barba.
+                        </p>
+                    </div>
+                    <div class="article__div">
+                        <h3 class="article__div-h3">tratamientos</h3>
+                        <p class="article__div-p">
+                            Para adicionar a nuestros servicios, podemos hacer:
+                        </p>                            
+                        <p class="article__div-p">
+                            MÁSCARA NEGRA: Elimina los puntos negros del rostro.
+                        </p>
+                        <p class="article__div-p">
+                            EXFOLIACIÓN: Limpia la piel de grasitud y remueve las células muertas del rostro.
+                        </p>
+                    </div>
+                </article>
+<!--******* grid - galeria *******-->
+                <article class="main__section-article--grid" >
+                    <h2  class="flex-item" >galeria</h2>
+                    <img class="flex-item"  src="" alt="">
+                    <img class="flex-item" src="" alt="">
+                    <img class="flex-item"src="" alt="">
+                    <img class="flex-item"src="" alt="">
+                    <img class="flex-item"src="" alt="">
+                    <img class="flex-item"src="" alt="">
+                    <img class="flex-item"src="" alt="">
+                    <img class="flex-item"src="" alt="">
+                    <img class="flex-item"src="" alt="">
+                </article>
+<!--******* otro? ******-->
+                <article class="main__section-article" >
+                    <h2>article</h2>
+                </article>
+<!--***** formulario - bootstrap *****-->
+                <article class="main__section-article" >
+                    <h2 class="main__section-article-h2" >registro</h2>
+                    <form action="" class="main__section-article-form form" >
+                        <legend class="form__legend" >pedi tu turno</legend>
+                        <fieldset class="form__fieldset" >
+                            <legend class="form__fieldset-legend" >
+                                conjunto de campo
+                            </legend>
+                            <label for="" class="form__fieldset-label" ></label>
+                            <input type="text" class="form__fieldset-input" >
+                            <label for="" class="form__fieldset-label" ></label>
+                            <input type="password" class="form__fieldset-input" >
+                            <label for="" class="form__fieldset-label" ></label>
+                            <input type="time" class="form__fieldset-input" >
+                        </fieldset>
+                        <fieldset class="form__fieldset" >
+                            <label for="" class="form__fieldset-label" >
+                                <input  type="checkbox"class="form__fieldset-input" >
+                            </label>
+                            <label  class="form__fieldset-label" for="">
+                                <input type="checkbox" class="form__fieldset-input" >
+                            </label>
+                            <label for="" class="form__fieldset-label" >
+                                <input type="checkbox" class="form__fieldset-input" >
+                            </label>
+                        </fieldset>
+                        <input class="btn btn-warning btn-outline-dark btm-sm" type="submit" name="" id="">
+                    </form>
+                </article>
+            </section>
+<!--******* miembros - integrantes *******-->
+            <aside class="aside" >
+                <h2>intengrantes</h2>
+                <div>
+                    <h3>Baltasar A. Kuntzius</h3>
+                    <p>hola</p>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <h3>ivana</h3>
+                    <p>chau</p>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <h3>otro</h3>
+                    <p>otro</p>
+                    <img src="" alt="">
+                </div>
+            </aside>
+        </main>
+
+        <footer class="footer" >
+            footer - todos los dereches cerebrados
+        </footer>
+
+    </body>
 </html>
