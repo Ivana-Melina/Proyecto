@@ -38,3 +38,8 @@ nav a:hover{
     color: #FFFF;
     text-decoration: underline;
 }
+
+/* Contenido */
+.contenedor{
+    width: 100%;
+}
