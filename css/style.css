@@ -1,0 +1,40 @@
+header {
+    background-color: #000000;
+    padding: 20px 0;
+    background-size: cover;
+}
+
+.caja{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#logo{
+    width: 230px;
+    height: 230px;
+    margin: 20px;
+}
+nav{
+    position: absolute;
+    top:110px;
+    right: 40px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #c78c19;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #FFFF;
+    text-decoration: underline;
+}
