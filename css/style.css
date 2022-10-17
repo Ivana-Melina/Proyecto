@@ -1,3 +1,6 @@
+body{
+    background-color: #000000;
+}
 header {
     background-color: #000000;
     padding: 20px 0;
@@ -11,8 +14,8 @@ header {
 }
 
 #logo{
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
     margin: 20px;
 }
 nav{
@@ -40,6 +43,38 @@ nav a:hover{
 }
 
 /* Contenido */
-.contenedor{
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    height: 500px;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 15s infinite alternate; /* alternate va recorriendo de arriba hacia abajo, y al final vuelve de abajo hacia arriba*/
+    animation-timing-function: ease-out;
+}
+.slider li{
     width: 100%;
+    list-style: none;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    /* que aparezca la segunda imagen, por que la diferencia del 5% porque será el tiempo que tarda en cambiar */
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    /*Cambiar a la tercera imagen*/
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+ /*Cambiar a la cuarta imagen*/
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
 }
