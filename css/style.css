@@ -1,6 +1,7 @@
 header {
-    background-color: #BBBBBB;
+    background-color: #000000;
     padding: 20px 0;
+    background-size: cover;
 }
 
 .caja{
@@ -27,13 +28,13 @@ nav li{
 
 nav a{
     text-transform: uppercase;
-    color: #000000;
+    color: #c78c19;
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
 }
 
 nav a:hover{
-    color: #c78c19;
+    color: #FFFF;
     text-decoration: underline;
 }
