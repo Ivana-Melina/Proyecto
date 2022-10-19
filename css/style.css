@@ -27,8 +27,7 @@ nav{
 }
 
 nav li{
-    display: inline;
-    margin: 0 0 0 20px;
+    display: inline-block;
 }
 
 nav a{
@@ -45,9 +44,9 @@ nav a:hover{
     text-decoration: underline;
 }
 
-@media (max-width: 800px){
+@media (max-width: 980px){
    header{
-    flex-direction: column; /**/
+    flex-direction: column;
    } 
    .logo{
         margin-top:5px;
@@ -55,11 +54,20 @@ nav a:hover{
     }
    nav{
     position: static;
-    padding: 10px 0px;
    }
   
 }
-
+@media (max-width: 400px){
+   
+    nav li{
+        margin-right: 10px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+   
+ }
+ 
 /* Contenido 
 Parte de Animación*/
 .slider{
@@ -105,6 +113,12 @@ Parte de Animación*/
     height: 400px;
   }
    
+} 
+@media (max-width: 400px){
+    .slider img{
+      height: 200px;
+    }
+     
 } 
 
 /* Contenido 
@@ -156,6 +170,19 @@ hr{
     padding: 5px 25px;
     color: #895800;
 }
+@media (max-width: 400px){
+    .Container{
+        width: 210px;
+        height: 60vh;
+    }
+    .img-cards{
+        width: 100px;
+    }
+    .descrip{
+        font-size: 15px;
+    }
+}
+
 /*Pie de pagina*/
 .pie-pagina{
     width: 100%;
