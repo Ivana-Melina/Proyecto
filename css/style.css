@@ -4,22 +4,21 @@ body{
 }
 header {
     background-color: #000000;
-    padding: 20px 0;
-    justify-content: space-between;
+    padding: 10px 0px;
+    min-height: 70px;
+    justify-content: space-between; /* para tener nuestro conteniedo centrado uno en cada extremo*/
     background-size: cover;
+    align-items: center;
+    display: flex;
+}
+
+.logo{
+    display: flex;
     align-items: center;
 }
 
-.caja{
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
-}
-
-#logo{
-    width: 200px;
+.logo img{
     height: 200px;
-    margin: 20px;
 }
 nav{
     position: absolute;
@@ -38,11 +37,27 @@ nav a{
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
+    padding-right: 10px;
 }
 
 nav a:hover{
     color: #FFFF;
     text-decoration: underline;
+}
+
+@media (max-width: 800px){
+   header{
+    flex-direction: column; /**/
+   } 
+   .logo{
+        margin-top:5px;
+        justify-content: center;
+    }
+   nav{
+    position: static;
+    padding: 10px 0px;
+   }
+  
 }
 
 /* Contenido 
@@ -51,7 +66,6 @@ Parte de Animación*/
     width: 95%;
     margin: auto;
     overflow: hidden;
-    height: 550px;
 }
 .slider ul{
     display: flex;
@@ -65,7 +79,11 @@ Parte de Animación*/
     width: 100%;
     list-style: none;
 }
-
+.slider img{
+    width: 100%;
+    height: 550px;
+   object-fit: cover;
+}
 @keyframes cambio{
     0% {margin-left: 0;}
     20% {margin-left: 0;}
@@ -82,6 +100,13 @@ Parte de Animación*/
     100%{margin-left: -300%;}
 
 }
+@media (max-width: 800px){
+  .slider img{
+    height: 400px;
+  }
+   
+} 
+
 /* Contenido 
 Parte de las tarjetas*/
 h1, h2{
@@ -183,7 +208,7 @@ hr{
     font-size: small;
 }
 
-@media screen and (max-widht:800px) {
+@media screen and (max-width:800px) {
     .pie-pagina .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1,1fr);
