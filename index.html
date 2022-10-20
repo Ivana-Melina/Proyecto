@@ -5,90 +5,144 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--****** enlace - css ******-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css"> <!-- Realiza un reset de las configuraciones predeterminada del navegador 
+            para que no interfiera en nuestro stilo al dar nuestra pagina -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <title>BarberShop</title>
-        <link rel="stylesheet" href="css/estilos.css">
 
     </head>
 
+
     <body>
-<!--******* header ******-->
-        <header class="header" >
-            <br>
-             
-            <nav id="nav">
-                <a href="index.html">
-                <img src="imagenes/logochico.jpg" alt="logo" width="50">
-                <!--<link rel="stylesheet" href="estilos.css">-->
-                </a>
-                <br>
-            <a href="index.html">Home</a>
-            <a href="Galeria.html">Galeria</a>
-            <a href="Reserva.html">Reserva</a>
-            <a href="Ubicacion.html">Ubicacion</a>
-            <a href="Contacto.html">Contacto</a>
-
-            <h1>BarberShop</h1> 
-
+        <!--******* header ******-->
+        <header>
+            <div class="logo">
+                <img  src="imagenes/logochico.png"> 
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="galeria.html">Productos</a></li>
+                    <li><a href="Reserva.html">Reserva</a></li>
+                    <li><a href="ubicacion.html">Ubicación</a></li>
+                    <li><a href="contacto.html">Contactos</a></li>
+                </ul>
             </nav>
-            <br>
-            
-            
+        
         </header>
 
         <main class="main" >
-            <img width="100%" src="./imagenes/logo.jpg" alt="logo">
-            <section class="main__section" >
-<!--*******  trajetas  *******-->
-                <article class="main__section-article--flex" >
-                    <h2 class="article__h2 flex-item">Servicios</h2>
+            <div class="slider">
+                <ul>
+                    <li><img src="imagenes/barber-img1.jpg" alt= "barber"></li>
+                    <li><img src="imagenes/barber-img2.jpg" alt= "barber"></li>
+                    <li><img src="imagenes/barber-img3.jpg" alt= "herramientas"></li>
+                    <li><img src="imagenes/barber-img4.jpg" alt= "corte a niño"></li>
+                </ul>
+            </div>
+            
+            <section class="card-section" >
+                <!--*******  trajetas  *******-->
+                <h1 class="titulo"><strong>SERVICIOS</strong></h1>
+                <article class="cards" >
                     <div class="Container">
-                        <h3 class="item">Corte</h3>
-                        <p class="descrip">
-                            Realizamos distintos tipos de corte de cabello tanto con tijeras, navaja 
-                            y máquina. 
-                        </p>
-                        <p class="descrip">
-                            Nuestro equipo está capacitado con las últimas técnicas y tendencias 
-                            para asesorar a cada cliente a conseguir su estilo único.
-                        </p>
+                        <div class="card-header">
+                            <img class="img-cards" src="imagenes/tijeras-y-peine.png" alt="corte">
+                            <h2 class="item">Corte</h2>
+                        </div>
+                        <hr>
+                        <div class="descrip">
+                            <p>
+                                Realizamos distintos tipos de corte de cabello tanto con tijeras, navaja 
+                                y máquina.
+                                Nuestro equipo está capacitado con las últimas técnicas y tendencias 
+                                para asesorar a cada cliente a conseguir su estilo único.
+                            </p>
+                        </div>  
                     </div>
                     <div class="Container">
-                        <h3 class="item">Lavado</h3>
-                        <p class="descrip">
-                            Corte de cabello con lavado incluído y terminaciones a navaja.
-                        </p>
+                        <div class="card-header">
+                            <img class="img-cards" src="imagenes/peluqueria-lavar-el-cabello-de-un-cliente-con-champu-burbujas.png" alt="corte">
+                            <h2 class="item">Lavado</h2>
+                        </div>
+                        <hr>
+                        <div class="descrip">
+                            <p>
+                                Corte de cabello con lavado incluído y terminaciones a navaja.
+                            </p>
+                        </div>  
                     </div>
                     <div class="Container">
-                        <h3 class="item">Tinte</h3>
-                        <p class="descrip">
-                            Las tendencias y los tonos cambian. Animate vos también.
-                        </p>
+                        <div class="card-header">
+                            <img class="img-cards" src="imagenes/kit-de-tinte-para-el-cabello.png" alt="corte">
+                            <h2 class="item">Tinte</h2>
+                        </div>
+                        <hr>
+                        <div class="descrip">
+                            <p>
+                                Las tendencias y los tonos cambian. <br> Animate vos también.
+                            </p>
+                        </div>  
                     </div>
                     <div class="Container">
-                        <h3 class="item">Afeitado</h3>
-                        <p class="descrip">
-                            Arreglo de barba con fomento caliente y frío. Terminaciones a navaja y productos para el cuidado de tu piel y barba.
-                        </p>
+                        <div class="card-header">
+                            <img class="img-cards" src="imagenes/maquinilla-de-afeitar.png" alt="corte">
+                            <h2 class="item">Afeitado</h2>
+                        </div>
+                        <hr>
+                        <div class="descrip">
+                            <p>
+                                Arreglo de barba con fomento caliente y frío. <br> Terminaciones a navaja y productos para el cuidado de tu piel y barba.
+                            </p>
+                        </div>  
                     </div>
                     <div class="Container">
-                        <h3 class="item">Tratamientos</h3>
-                        <p class="descrip">
-                            Para adicionar a nuestros servicios, podemos hacer:
-                        </p>                            
-                        <p class="descrip">
-                            MÁSCARA NEGRA: Elimina los puntos negros del rostro.
-                        </p>
-                        <p class="descrip">
-                            EXFOLIACIÓN: Limpia la piel de grasitud y remueve las células muertas del rostro.
-                        </p>
+                        <div class="card-header">
+                            <img class="img-cards" src="imagenes/proteccion-de-la-piel.png" alt="corte">
+                            <h2 class="item">Tratamientos</h2>
+                        </div>
+                        <hr>
+                        <div class="descrip">
+                            <p>
+                                Para adicionar a nuestros servicios, podemos hacer: <br> <br>
+                                MÁSCARA NEGRA: Elimina los puntos negros del rostro. <br><br>
+                                EXFOLIACIÓN: Limpia la piel de grasitud y remueve las células muertas del rostro.
+                            </p>
+                        </div>  
                     </div>
                 </article>  
             </aside>
         </main>
         <br>
-
-        <footer class="footer" >
-            INTEGRANTES: Baltasar A. Kuntzius - Ivana M. Taberna - Maira Medina
+        <footer class="pie-pagina" >
+            <div class="grupo-1">
+                <div class="box">
+                    <h2>INTEGRANTES</h2>
+                    <p>Baltasar A. Kuntzius <br> Ivana M. Taberna <br> Maira Medina</p>
+                </div>
+                <div class="box">
+                    <h2>CONTACTOS</h2>
+                    <div class="iconos">
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="imagenes/facebook.png" alt="facebook">
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=0123456789" target="_blank">
+                            <img src="imagenes/whatsapp.png" alt="whatsapp">
+                        </a>
+                        <a href="#">
+                            <img src="imagenes/icono mail.jpg" alt="mail">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy;2022 <b>BarberShop</b> - Todos los Derechos Reservados</small> 
+            </div>
         </footer>
 
     </body>

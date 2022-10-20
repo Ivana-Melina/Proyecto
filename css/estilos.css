@@ -1,12 +1,22 @@
+*{
+    padding: 0px;
+    margin: 0p;
+}
+.body{
+    
+}
+
 head{
     color: black;
 
 }
-header{
+.header{
     background: black;
+
 }
 a{
     color: white;
+
 }
 div {
     
@@ -20,7 +30,7 @@ div {
 }
 .Container:hover .item{
     position:static;
-    transform: scale(1.1);
+    transform: scale(1.1,1.5);
 
 }
 
