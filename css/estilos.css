@@ -8,10 +8,6 @@ header{
 a{
     color: white;
 }
-div {
-    
-
-}
 .item{
     width: 100px;
     height: 20px;
@@ -31,9 +27,7 @@ h1{
     
     
 }
-a{
 
-}
 h2{
     background-color: black; 
     
@@ -46,9 +40,4 @@ h2{
 h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-}
-
-footer{
-    text-align: center;
-    font-weight: bold;
 }
