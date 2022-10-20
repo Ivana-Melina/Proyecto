@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=h, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/style.css">
+=======
+    <!-- <link rel="stylesheet" href="css/estilos.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+>>>>>>> f162520aed6140e8b964e5bbb048b34e96821f56
     <link rel="stylesheet" href="css/reset.css"> <!-- Realiza un reset de las configuraciones predeterminada del navegador 
     para que no interfiera en nuestro stilo al dar nuestra pagina -->
     <title>BarberShop</title>
 </head>
-<body>
+<body style=" background-color: #000000">
     <header>
         <div class="logo">
             <img  src="imagenes/logochico.png"> 
@@ -29,6 +36,7 @@
 
     <main>
         
+<<<<<<< HEAD
        
         <br>
         <form action="datos">
@@ -52,10 +60,45 @@
             <input type="text" name="servicio" id="servicio">
             <br>
             <br>
+=======
+        <!-- Formularios con Bootstrap-->
+        <div class="container justify-content-center text-light fs-5 text" >
+            <form class="mt-3">
+                <div class="row mb-3 justify-content-center">
+                    <label for="nameInput" class="col-2 col-form-label">Nombre</label>
+                    <div class="col-10 col-md-6"><input type="text" class="form-control" id="nameInput"></div>
+                </div>
+                <div class="row mb-3 justify-content-center">
+                    <label for="emailInput" class="col-2 col-form-label"> Email</label>
+                    <div class="col-10 col-md-6"><input type="email" class="form-control" id="emailInput"></div>
+                </div>
+                <div class="row mb-3 justify-content-center">
+                    <label for="turnoInput" class="col-2 col-form-label">Turno</label>
+                    <div class="col-10 col-md-6"><input type="datetime-local" class="form-control" id="turnoInput"></div>
+                </div>
+                <div class="row mb-3 justify-content-center">
+                    <label for="servicioInput" class="col-2 col-form-label">Servicio</label>
+                    <div class="col-10 col-md-6">
+                        <select class="form-select" id="servicioInput">
+                            <option selected>Seleccionar un servicio </option>
+                            <option value="1">Corte</option>
+                            <option value="2">Lavado</option>
+                            <option value="3">Tinte</option>
+                            <option value="4">Afeitado</option>
+                            <option value="5">Tratamientos</option>
+                        </select>
+                    </div>
+                </div>
+               <div class="col text-center">
+                    <button type="submit" class="btn mb-3 mt-4 col-2 fw-bold" style="background-color: #c78c19 ;">
+                        Enviar
+                    </button>
+               </div>
+                
+            </form>
+>>>>>>> f162520aed6140e8b964e5bbb048b34e96821f56
 
-            <input type="submit" value="Enviar">
-
-        </form>
+        </div>
 
     </main>
 

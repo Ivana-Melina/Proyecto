@@ -43,6 +43,7 @@ nav a:hover{
     color: #FFFF;
     text-decoration: underline;
 }
+<<<<<<< HEAD
 label{
     color: #c78c19;
     font-weight: bold;
@@ -51,6 +52,8 @@ label{
     padding-right: 10px;
 
 }
+=======
+>>>>>>> f162520aed6140e8b964e5bbb048b34e96821f56
 
 @media (max-width: 980px){
    header{
@@ -178,7 +181,10 @@ hr{
     padding: 5px 25px;
     color: #895800;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> f162520aed6140e8b964e5bbb048b34e96821f56
 @media (max-width: 400px){
     .Container{
         width: 210px;
