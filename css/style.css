@@ -178,6 +178,13 @@ hr{
     padding: 5px 25px;
     color: #895800;
 }
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #c78c19;
+    padding-top: 20px;
+}
 
 @media (max-width: 400px){
     .Container{
