@@ -60,15 +60,20 @@ label{
         margin-top:5px;
         justify-content: center;
     }
+    nav ul{
+        margin-left: 2em;
+
+    }
    nav{
     position: static;
    }
   
 }
 @media (max-width: 400px){
-   
-    nav li{
-        margin-right: 10px;
+    
+    nav ul{
+        margin-left: 2em;
+
     }
     nav a{
         font-size: 20px;
