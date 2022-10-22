@@ -22,6 +22,33 @@
 .contact-form{
     background-color: #7d7c84;
 }
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 1fr es 1 fraccion de divir las columnas en este caso */
+}
+.contact-form form p{
+    margin: 0;
+    padding: 1em;
+
+}
+.contact-form form button, 
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #c78c19;
+}
+.contact-form form label{
+    color: #0a0a0a;
+}
+.contact-form form button{
+    background:#c78c19 ;
+    border:0;
+    text-transform: uppercase;
+    padding: 1em;
+}
 /* LARGE SIZE d7263d*/
 @media(min-width: 700px) {
     .content {
