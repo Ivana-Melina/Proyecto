@@ -9,19 +9,22 @@ form.addEventListener("submit", e=>{
     let entrar = false
     /* validacion de caracteres para el mail dominio*/
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    parrafo.innerHTML = ""
     if(nameInput.value.length <6){
         warnings += 'El nombre no es valido <br>'
         entrar = true
     }
-    console.log(regexEmail.test(emailInput.value))
+    /*console.log(regexEmail.test(emailInput.value))*/
     if (!regexEmail.test(emailInput.value)){
         warnings += 'El email no es valido <br>'
         entrar = true
-        if(enviar){
-            parrafo.innerHTML = warnings
-        }else{
+    }
+
+    if(entrar){
+        parrafo.innerHTML = warnings
+    }else{
             parrafo.innerHTML = "Enviado"
-        }
+        
 
     }
 })
