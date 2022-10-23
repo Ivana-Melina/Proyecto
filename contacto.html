@@ -40,33 +40,36 @@
         <main>
             <div class="content">
                 <h1 class="titulo-contact">Contactanos</h1>
+                <form action="" method="POST" id="form"></form>
                 <div class="contact">
                     <div class="contact-form">
-                        <form action="">
+                        <form action="" method="POST" id="form">
+                            
                             <p>
-                                <label for="name">Nombre</label>
-                                <input type="text" name="name" id="name">
+                                <label for="">Nombre</label>
+                                <input type="text" nombre="" id="Nombre">
                             </p>
                             <p>
                                 <label for="email">Email</label>
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="email" required >
                             </p>
                             <p>
                                 <label for="cell">Celular</label>
-                                <input type="tel" name="celular" id="cell">
+                                <input type="tel" name="celular" id="cell" required>
                             </p>
                             <p>
                                 <label for="asunto">Asunto</label>
-                                <input type="text" name="asunto" id="asunto">
+                                <input type="text" name="asunto" id="asunto" required>
                             </p>
                             <p class="block">
                                 <label for="mensaje">Mensaje</label>
-                                <textarea name="mensaje" id="mensaje" rows="3"></textarea>
+                                <textarea name="mensaje" id="mensaje" rows="3" required></textarea>
                             </p>
                             <p class="block">
                                 <button type="submit">
                                     Enviar
                                 </button>
+                                <p class="warnings" id="warnings"></p><!--msj de advertencia, tambien tiene cambios en style-->
                             </p>
                         </form>
                     </div>
@@ -121,6 +124,9 @@
                 <small>&copy;2022 <b>BarberShop</b> - Todos los Derechos Reservados</small>
             </div>
         </footer>
+        <script>
+            src = "./js/main.js"
+        </script>
     </body>
 
 </html>

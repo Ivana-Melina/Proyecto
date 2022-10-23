@@ -1,30 +1,47 @@
-const nameInput = document.getElementById("Nombre")
-const emailInput = document.getElementById("email")
-const form = document.getElementById("form")
-const parrafo = document.getElementById("warnings")
+const form = document.getElementById('form');
+const nombre = document.getElementById('nombre');
+const email = document.getElementById('email');
+const celular = document.getElementById('cell');
+const asunto = document.getElementById('asunto');
+const mensaje = document.getElementById('mensaje');
+const parrafo = document.getElementById('warnings');
 
-form.addEventListener("submit", e=>{
+form.addEventListener('submit', e=>{
     e.preventDefault()
-    let warnings = ""
-    let entrar = false
+    let warnings = '';
+    let entrar = false;
     /* validacion de caracteres para el mail dominio*/
-    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
-    parrafo.innerHTML = ""
-    if(nameInput.value.length <6){
-        warnings += 'El nombre no es valido <br>'
-        entrar = true
+    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    parrafo.innerHTML = ''
+    if(nombre.value.length <2){
+        warnings += 'El nombre no es valido <br>';
+        entrar = true;
     }
-    /*console.log(regexEmail.test(emailInput.value))*/
-    if (!regexEmail.test(emailInput.value)){
-        warnings += 'El email no es valido <br>'
-        entrar = true
+   
+    
+    if (!regexEmail.test(email.value)){
+        warnings += 'El email no es valido <br>';
+        entrar = true;
+    }
+    if(cell.value.length <2){
+        warnings += 'El celular no es valido <br>';
+        entrar = true;
+    }
+    if(asunto.value.length >200){
+        warnings += 'El asunto debe ser mas corto <br>';
+        entrar = true;
+    }
+    if(mensaje.value.length >300){
+        warnings += 'El mensaje debe ser mas corto <br>';
+        entrar = true;
     }
 
     if(entrar){
-        parrafo.innerHTML = warnings
+        parrafo.innerHTML = warnings;
     }else{
-            parrafo.innerHTML = "Enviado"
+            parrafo.innerHTML = 'Enviado';
         
 
     }
 })
+

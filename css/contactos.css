@@ -77,6 +77,13 @@
 .contact-info ul li{
     padding: .3em;
 }
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #c50b0b;
+    padding-top: 20px;
+}
 
 /* LARGE SIZE */
 @media (min-width:900px) {
