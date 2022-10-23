@@ -203,7 +203,24 @@ hr{
         font-size: 15px;
     }
 }
+/*Tarjetas de opiniones*/
+.user{
+    text-align: center;
+}
+.card-user{
+    width: 250px;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    background-color: #ebebeb;
+    border-radius: 10%; 
+    margin-bottom: 15px;
 
+}
+.name-user{
+    margin-top: 10px;
+}
 /*Pie de pagina*/
 .pie-pagina{
     width: 100%;
