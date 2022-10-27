@@ -1,12 +1,21 @@
 const form = document.getElementById('form');
-const nombre = document.getElementById('nombre');
+const button = document.getElementById('submit')
+const name = document.getElementById('name');
 const email = document.getElementById('email');
 const celular = document.getElementById('cell');
 const asunto = document.getElementById('asunto');
 const mensaje = document.getElementById('mensaje');
 const parrafo = document.getElementById('warnings');
 
-form.addEventListener('submit', e=>{
+const formIsValid ={
+    name: false,
+    email: false,
+    celular: false,
+    asunto: false,
+    mensaje: false,
+}
+
+form.addEventListener('submit', (e) => {
     e.preventDefault()
     let warnings = '';
     let entrar = false;
@@ -17,8 +26,6 @@ form.addEventListener('submit', e=>{
         warnings += 'El nombre no es valido <br>';
         entrar = true;
     }
-   
-    
     if (!regexEmail.test(email.value)){
         warnings += 'El email no es valido <br>';
         entrar = true;
