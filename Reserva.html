@@ -38,20 +38,22 @@
 
             <!-- Formularios con Bootstrap-->
             <div class="container justify-content-center text-light fs-5 text">
-                <form action="" class="mt-3">
+                <form action="" method="POST" class="mt-3 was-validated" novalidate>
                     <div class="row mb-3 justify-content-center">
                         <label for="nameInput" class="col-2 col-form-label">Nombre</label>
-                        <div class="col-10 col-md-6"><input type="text" class="form-control" id="nameInput" required></div>
+                        <div class="col-10 col-md-6"><input type="text" class="form-control" id="nameInput" name="" required></div>
                         <div class="valid-feedback">
                             Campo completado
                         </div>
                         <div class="invalid-feedback">
                             Es necesario poner el Nombre
                         </div>
+                        
+
                     </div>
                     <div class="row mb-3 justify-content-center">
                         <label for="emailInput" class="col-2 col-form-label"> Email</label>
-                        <div class="col-10 col-md-6"><input type="email" class="form-control" id="emailInput" required></div>
+                        <div class="col-10 col-md-6"><input type="email" class="form-control" id="emailInput" name="" required></div>
                         <div class="valid-feedback">
                             Campo completado
                         </div>
@@ -61,7 +63,7 @@
                     </div>
                     <div class="row mb-3 justify-content-center">
                         <label for="turnoInput" class="col-2 col-form-label">Turno</label>
-                        <div class="col-10 col-md-6"><input type="datetime-local" class="form-control" id="turnoInput" required>
+                        <div class="col-10 col-md-6"><input type="datetime-local" class="form-control" id="turnoInput" name="" required>
                         </div>
                         <div class="valid-feedback">
                             Campo completado
@@ -73,8 +75,8 @@
                     <div class="row mb-3 justify-content-center">
                         <label for="servicioInput" class="col-2 col-form-label">Servicio</label>
                         <div class="col-10 col-md-6">
-                            <select class="form-select" id="servicioInput" required>
-                                <option selected>Seleccionar un servicio </option>
+                            <select class="form-select" id="servicioInput" name="" required>
+                                <option selected disabled value="">Seleccionar un servicio </option>
                                 <option value="1">Corte</option>
                                 <option value="2">Lavado</option>
                                 <option value="3">Tinte</option>
@@ -86,6 +88,7 @@
                             Campo completado
                         </div>
                         <div class="invalid-feedback">
+                            
                             Es necesario poner el Nombre
                         </div>
                     </div>
@@ -129,24 +132,26 @@
                 <small>&copy;2022 <b>BarberShop</b> - Todos los Derechos Reservados</small>
             </div>
         </footer>
-        <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+        <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
             (() => {
-              'use strict'
+            'use strict'
             
               // Fetch all the forms we want to apply custom Bootstrap validation styles to
-              const forms = document.querySelectorAll('.needs-validation')
+            const forms = document.querySelectorAll('.needs-validation')
             
               // Loop over them and prevent submission
-              Array.from(forms).forEach(form => {
+            Array.from(forms).forEach(form => {
                 form.addEventListener('submit', event => {
-                  if (!form.checkValidity()) {
+                    if (!form.checkValidity()) {
                     event.preventDefault()
                     event.stopPropagation()
-                  }
-            
-                  form.classList.add('was-validated')
+                }else{
+                    alert('DATOS VALIDADOS')
+                }
+                form.classList.add('was-validated')
                 }, false)
-              })
+            })
             })()
             
         </script>
