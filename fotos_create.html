@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fotos create</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="nonymous"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img  src="imagenes/logochico.png"> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="Reserva.html">Reserva</a></li>
+                <li><a href="contacto.html">Contactos</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="fotos.html">editor galeria</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+    <main style="margin: 1% 20%;">
+        <div class="container">
+            <h1>Alta Producto</h1>    
+            <form>      
+            <div class="mb-3">
+                    <label for="txtImagen">imagen</label>
+                    <input type="text" class="form-control" name="txtImagen" id="txtImagen"><br>
+                </div>
+                <div class="mb-3">
+                    <label for="txtDescripcion">Descripcion</label>
+                    <input type="text" class="form-control" name="txtDescripcion" id="txtDescripcion"> <br>
+                </div>
+                <button type="button" class="btn btn-success" onclick="guardar()">Grabar</button>
+                </form>
+            <br>
+            <a href="fotos.html" class="btn btn-warning">crud</a>
+        </div>
+    </main>
+    <footer class="pie-pagina" >
+        <div class="grupo-1">
+            <div class="box">
+                <h2>INTEGRANTES</h2>
+                <p>Baltasar A. Kuntzius <br> Ivana M. Taberna <br> Maira Medina</p>
+            </div>
+            <div class="box">
+                <h2>CONTACTOS</h2>
+                <div class="iconos">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="imagenes/facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=0123456789" target="_blank">
+                        <img src="imagenes/whatsapp.png" alt="whatsapp">
+                    </a>
+                    <a href="#">
+                        <img src="imagenes/icono mail.jpg" alt="mail">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy;2022 <b>BarberShop</b> - Todos los Derechos Reservados</small> 
+        </div>
+    </footer>
+    <script src="./js/create.js"></script>
+</body>
+</html>
